@@ -28,7 +28,7 @@ handTrack.startVideo(video).then(status => {
                 ctx.canvas.width = maxwidth
                 ctx.canvas.height = maxheight
                 setInterval(DetectHand,0)
-            }, 1000);
+            }, 5000);
             
         },
         err => console.log(err)

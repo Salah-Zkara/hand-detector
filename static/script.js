@@ -13,6 +13,9 @@ let flagBox = false
 var currX = 30 + width/2, currY = 30 + height/2
 var maxwidth,maxheight
 
+handTrack.load(modelParams).then(lmodel => {
+    model = lmodel
+})
 
 
 handTrack.startVideo(video).then(status => {
@@ -80,9 +83,7 @@ function DetectHand() {
     })
 }
 
-handTrack.load(modelParams).then(lmodel => {
-    model = lmodel
-})
+
 
 
 
